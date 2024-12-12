@@ -48,7 +48,7 @@ ul {
 
 img {
   border: none;
-  max-weight: 100%;
+  max-width: 100%;
   vertical-align: midle;
 }
 
@@ -88,6 +88,24 @@ object, embed, video, iframe, iframe[style]{
     clear:both;}
 .fontzero{
     font-size:0;
+}
+
+/*BIG TITLE */
+.big_title{
+  display: block;
+  margin-bottom: 50px;
+  border-right: 10px solid #ccc;
+}
+.big_title h1{
+  font-size: 3em;
+  font-weight: bold;
+  color: #888;
+  text-transform: uppeercaseç
+}
+
+.tagline {
+  padding-left:5px  ;
+  color: #888;
 }
 
 /* RATIO */
@@ -181,3 +199,33 @@ object, embed, video, iframe, iframe[style]{
   padding: 10px;
   background: rgba(255,255,255,0.1);
 }
+
+/* O CURSO*/
+.curso_item {
+ float:left;
+  width:20.75%;
+  margin-right: 3%;
+}
+
+.curso_item:last_of_type{
+  margin-right: 0;
+}
+
+.curso_item h1{
+  font-size: 1.4rem;
+  font-weight: 600;
+  color:#2eb5d1;
+  margin-top: 20px;
+}
+
+.curso_item p{
+  font-size: 0.875rem;
+  margin: 10px 0;
+}
+
+.curso_item span{
+  font-size: 0.275rem;
+  text-transform: uppercase;
+  color: #ccc;
+}
+
