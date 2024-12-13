@@ -229,3 +229,37 @@ object, embed, video, iframe, iframe[style]{
   color: #ccc;
 }
 
+.cursos_footer{
+  background:#289cb5;
+  text-align: center;
+  color: #fff;
+}
+.cursos_footer .content{
+  padding-bottom:0;
+  max-width: 500px;
+}
+
+.cursos_footer h1 {
+  font-size: 1.5rem;
+  font-weight:bold;
+  text-transform: uppercase;
+  margin: 20px 0 20px 0;
+}
+.cursos_footer p {
+font-size: 0.9rem;
+font-weight: 300;
+}
+.cursos_footer .btn{
+  display:block;
+  max-width:90%;
+  margin: 0 auto;
+  margin-top: 30px;
+  padding: 20px;
+  text-transform: uppercase;
+  color:#fff;
+  font-weight:600;
+  background:#00458a;
+}
+.cursos_footer .btn:hover{
+  background:#005ebb;
+}
