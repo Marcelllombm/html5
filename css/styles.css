@@ -89,6 +89,10 @@ object, embed, video, iframe, iframe[style]{
 .fontzero{
     font-size:0;
 }
+.border_bottom {
+  padding-bottom: 10px; 
+  background:url("/img/line_sidebar.jpg") center center;
+}
 
 /*BIG TITLE */
 .big_title{
@@ -262,4 +266,79 @@ font-weight: 300;
 }
 .cursos_footer .btn:hover{
   background:#005ebb;
+}
+
+.videoaula_videos{
+  float:left;
+ width: 65%;
+ padding-right:3%;
+}
+
+.videoaula_videos article{
+  float: left;
+  width: 48%;
+  margin: 0 4% 4% 0;
+}
+
+
+.videoaula_videos article img{
+  float: left;
+  margin-right: 10px;
+  width: 50%;
+}
+.videoaula_videos article h1{
+  font-size: 1rem;
+  margin-bottom: 5px;
+  font-weight: 600;
+  color:#2eb5d1;
+}
+.videoaula_videos article p{
+  font-size:0.875rem;
+}
+.videoaula_videos article:nth-of-type(2n+0){
+  margin-right:0;
+}
+
+.videoaulas_sidebar{
+  float: right;
+  width:35%;
+
+}
+.videoaulas_sidebar .content{
+  padding:30px;
+  width:100%;
+  background:#eee; 
+}
+
+.videoaulas_sidebar .title{
+  font-size: 1.1rem;
+  text-transform:uppeercase;
+  font-weight:bold;
+  text-align:center;
+  padding-bottom: 10px;
+  border-bottom: 5px solid #ccc;
+  margin:0 35px;
+}
+.videoaulas_sidebar_comment{
+  float:left;
+  width:100%;
+  margin-top:40px;
+}
+
+.videoaulas_sidebar_comment img{
+  float: left;
+  width:20%;
+  margin-right:20px;
+  border-radius:50%;
+}
+.videoaulas_sidebar_comment h1{
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+  text-transform: uppeercase;
+}
+
+.videoaulas_sidebar_comment p{
+  font-size:0.8em;
+  overflow: hidden;
 }
