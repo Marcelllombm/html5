@@ -16,8 +16,33 @@
     });
 
     $(function(){
-        alert("ola mundo ")
+    // SELETOR, EVENTO, CALBACK, AÇÃO
+        $('.j_background_red').click(function(){
+            // let text = $(this).text()
+            // alert(text)
+            $("#title").css({
+                'background':"red",
+                'color': 'white',
+                'width': '50%',
+                'padding': '10px'
+            })
+        })
+
+        $('.j_background_blue').click(function(){
+            $('#title').css({
+                'background':'blue',
+                'color': 'white',
+                'width': '50%',
+                'padding': '10px'
+            })
+        })
+
+        $('a[title="UpInside Treinamento"]').click(function(){
+            $(this).text($(this).attr('title'));
+
+            return false;
+        })
+
     });
 
-    // SELETOR, EVENTO, CALBACK, AÇÃO
     
