@@ -40,15 +40,15 @@
     </header>
     <!-- FECHA CABEÇALHO   -->
     <main class="container">
-      <article class="destaque container">
-        <div class="content">
-          <header>
-            <h1>Bem-vindo(a) ao Curso Gratuito de HTML5</h1>
-            <p class="tagline">
-              Você está pronto para aprender HTML5, css de forma descomplicadas, gratuita e do jeito certo? Confira o
-              nosso curso gratuiti de HTML5
-            </p>
-            <div>
+      <div class="border_bottom border_bottom_destaque">
+        <article class="destaque container">
+          <div class="content">
+            <header>
+              <h1>Bem-vindo(a) ao Curso Gratuito de HTML5</h1>
+              <p class="tagline">
+                Você está pronto para aprender HTML5, css de forma descomplicadas, gratuita e do jeito certo? Confira o
+                nosso curso gratuiti de HTML5
+              </p>
               <div
                 class="fb-like"
                 data-href="https://www.facebook.com/marcelllombm"
@@ -66,22 +66,22 @@
                   >Share</a
                 >
               </div>
+            </header>
+            <div class="destaque_video">
+              <div class="ratio">
+                <iframe
+                  class="media"
+                  src="https://www.youtube.com/embed/inkrRasrsxM"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
             </div>
-          </header>
-          <div class="destaque_video">
-            <div class="ratio">
-              <iframe
-                class="media"
-                src="https://www.youtube.com/embed/inkrRasrsxM"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-              ></iframe>
-            </div>
+            <div class="clear"></div>
           </div>
-          <div class="clear"></div>
-        </div>
-      </article>
+        </article>
+      </div>
       <!-- DESTAQUE DO SITE  -->
 
       <section class="container curso">
@@ -231,16 +231,16 @@
 
       <article class="container contato">
         <div class="content">
-          <header class="big_title">
+          <header>
             <h1>Entre em Contato:</h1>
             <p class="tagline">Este formulário está aqui apenas para estudos do curso de HTML5!</p>
           </header>
-          <form action="" method="post">
-            <label for="">
+          <form class="contato_form" method="post">
+            <label for="" class="medium">
               <span>Nome:</span>
               <input type="text" name="nome" title="Informe Seu Nome:" placeholder="Informe seu nome" required />
             </label>
-            <label for="">
+            <label for="" class="medium">
               <span>E-mail:</span>
               <input type="email" name="e-mail" title="Informe Seu e-mail:" placeholder="Informe seu e-mail" required />
             </label>
@@ -255,8 +255,13 @@
               ></textarea>
             </label>
             <!-- <input type="submit" value="Enviar" name="send_form" /> -->
-            <img title="Aguarde, Enviando Contato!" alt="[Aguarde, Enviando Contato!]" src="img/loader.gif" />
-            <button>Enviar</button>
+            <img
+              class="form_load"
+              title="Aguarde, Enviando Contato!"
+              alt="[Aguarde, Enviando Contato!]"
+              src="img/ajax-loader.gif"
+            />
+            <button class="btn">Enviar Contato</button>
           </form>
           <div class="clear"></div>
         </div>
@@ -264,32 +269,36 @@
       <!-- CONTATO -->
     </main>
     <!-- FECHA CONTÉUDO  -->
-    <footer class="container">
-      <div class="content">
-        <h1>Curso de HTML 5</h1>
-        <nav>
-          <h1>UpInside Treinamentos</h1>
-          <ul>
-            <li>
-              <a
-                target="_blank"
-                title="UpInside Treinamentos"
-                rel="noopener noreferrer"
-                href="https://www.upinside.com.br/"
-                >Upinside</a
-              >
-            </li>
-            <li>|</li>
-            <li>
-              <a target="_blank" title="Facebook" rel="noopener noreferrer" href="https://www.facebook.com">Facebook</a>
-            </li>
-            <li>|</li>
-            <li>
-              <a target="_blank" title="Youtube" rel="noopener noreferrer" href="https://www.youtube.com">Youtube</a>
-            </li>
-          </ul>
-        </nav>
-        <div class="clear"></div>
+    <footer class="container main_footer">
+      <div class="border_bottom">
+        <div class="ftcontent">
+          <h1 class="title">Curso de HTML 5</h1>
+          <nav>
+            <h1 class="subtitle">UpInside Treinamentos</h1>
+            <ul class="main_footer_social">
+              <li>
+                <a
+                  target="_blank"
+                  title="UpInside Treinamentos"
+                  rel="noopener noreferrer"
+                  href="https://www.upinside.com.br/"
+                  >Upinside</a
+                >
+              </li>
+              <li>|</li>
+              <li>
+                <a target="_blank" title="Facebook" rel="noopener noreferrer" href="https://www.facebook.com"
+                  >Facebook</a
+                >
+              </li>
+              <li>|</li>
+              <li>
+                <a target="_blank" title="Youtube" rel="noopener noreferrer" href="https://www.youtube.com">Youtube</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="clear"></div>
+        </div>
       </div>
     </footer>
 

@@ -93,6 +93,11 @@ object, embed, video, iframe, iframe[style]{
   padding-bottom: 10px; 
   background:url("/img/line_sidebar.jpg") center center;
 }
+.border_bottom_destaque {
+  float:left;
+  width:100%;
+}
+
 
 /*BIG TITLE */
 .big_title{
@@ -174,6 +179,7 @@ object, embed, video, iframe, iframe[style]{
   color:#fff;
 
 }
+
 
 .destaque header{
   float:left;
@@ -341,4 +347,128 @@ font-weight: 300;
 .videoaulas_sidebar_comment p{
   font-size:0.8em;
   overflow: hidden;
+}
+/* CONTATO */
+.contato{
+  background: #eee;
+}
+
+.contato header{
+  float: left;
+  width: 30%;
+}
+.contato h1{
+  font-size: 3rem;
+  text-transform:uppercase;
+  font-weight:bold;
+  color:#888;
+  mairgin-bottom: 20px;
+}
+
+.contato p{
+  color:#555;
+}
+
+.contato_form{
+  float: right;
+  width:70%;
+  padding-left: 5%;
+  
+}
+
+.contato label{
+  display: block;
+  width:100%;
+  margin-bottom: 20px;
+}
+
+.contato span{
+  font-size: 0.7rem;
+  display: block;
+  text-transform:uppercase;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.contato_form .medium{
+float:left;
+width: 48%;
+
+}
+.contato_form .medium:first-of-type {
+  margin-right:4%;
+}
+.contato_form textarea,
+.contato_form input{
+  width: 100%;
+  border:none;
+  background: #ccc;
+  padding:10px;
+  border-radius:5px;
+  font-family: 'Arial', sans-serif;
+}
+
+.contato_form .btn{
+  float:right;
+  border:none;
+  background:#289cb5;
+  padding: 15px 25px;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size:0.875rem;
+  margin-top:10px;
+  cursor:pointer;
+  border-radius: 5px;
+  color:#fff;
+}
+.contato_form .btn:hover{
+  background:#51c1d9;
+}
+
+.form_load{
+  float:right;
+  margin-top: 25px;
+  margin-left:20px;
+  /* display:none; */
+}
+
+.main_footer{
+  text-align: center;
+  color:#ccc;
+}
+
+.main_footer .ftcontent{
+  background:#444;
+  padding:30px;
+}
+
+.main_footer .title{
+  font-weight:bold;
+  font-size:2rem;
+
+}
+.main_footer .subtitle{
+  font-weight:bold;
+  font-size:1.2rem;
+  text-transform:uppercase;
+}
+
+.main_footer_social{
+  display:block;
+  margin-top:20px;
+}
+
+.main_footer_social li{
+  display:inline-block;
+  margin:0 5px;
+}
+
+.main_footer_social a{
+color:#fff;
+text-transform:uppeercase;
+font-size: 0.8rem;
+}
+
+.main_footer_social a:hover{
+  text-decoration:underline;
 }
