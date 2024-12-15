@@ -14,3 +14,10 @@
             timeElement.textContent = displayDate;
         })
     });
+
+    $(function(){
+        alert("ola mundo ")
+    });
+
+    // SELETOR, EVENTO, CALBACK, AÇÃO
+    
