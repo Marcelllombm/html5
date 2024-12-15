@@ -7,7 +7,10 @@
             month: 'long', 
             year: 'numeric' });
 
-         const timeElement = document.getElementById('currentDate');
-         timeElement.setAttribute('datetime', formattedDate); 
-         timeElement.textContent = displayDate;        
+        const timeElements = document.querySelectorAll('.currentDate');
+
+        timeElements.forEach(timeElement =>{
+            timeElement.setAttribute('datetime', formattedDate);
+            timeElement.textContent = displayDate;
+        })
     });
