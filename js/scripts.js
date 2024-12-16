@@ -66,4 +66,20 @@
          $('.j_effects_a').fadeOut(3000,function(){
             alert('Fade')
          })
+
+
+         $('.j_deletar').click(function(){
+            deletaPost($(this).attr("rel"));
+            return false;
+         })
+
+         function deletaPost(postId){
+            let alerta = confirm("tem certeza que quer deletar");
+            if(alerta === true){
+                $('#' + postId).fadeOut();
+                alert("Post removido com sucesso!!!")
+            }else {
+                alert("NO")
+            }
+         }
     })
