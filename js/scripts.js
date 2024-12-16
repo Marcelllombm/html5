@@ -98,4 +98,15 @@
                 alert("NO")
             }
          }
+
+         let s = 0;
+         setInterval(function(){
+            s++;
+            console.log(s)
+            if(s >4){
+                console.clear()
+                s = 0;
+            }
+            $('.j_time').text(s)
+         }, 1000)
     })
