@@ -98,6 +98,23 @@ object, embed, video, iframe, iframe[style]{
   width:100%;
 }
 
+.backtop{
+position: fixed;
+cursor: pointer;
+bottom: 15px; 
+right: 25px;
+text-transform: uppercase;
+color: #fff;
+font-size:0.5rem;
+padding: 10px;
+background: rgba(0,0,0,0.5);
+display: none;
+}
+
+.backtop:hover{
+  background:#09f;
+}
+
 /*BIG TITLE */
 .big_title{
   display: block;
@@ -136,6 +153,15 @@ object, embed, video, iframe, iframe[style]{
 
 .main_header{
     font-size: 0.875rem;
+}
+
+.main_header_fixed{
+  position: fixed;
+  top:0;
+  left: 0;
+  background: #fff;
+  border-bottom: 2px solid #ccc;
+  z-index: 99;
 }
 
 .main_header .content{
