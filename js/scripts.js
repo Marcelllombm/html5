@@ -43,6 +43,20 @@
             return false;
         })
 
+        $('.j_mouseover').mouseenter(function(){
+            alert('Passou o mouse no H1. Seu texto é ' + $(this).text())
+            $(this).css({
+                'color': 'blue',
+                'width': '30%',
+
+            })
+        })
+
+        $('.j_keyup').keyup(function(){
+            let texto = $(this).val();
+            $('.j_empresa').text(texto)
+        })
+
     });
 
     
