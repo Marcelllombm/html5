@@ -15,8 +15,9 @@
         })
     });
 
+       // SELETOR, EVENTO, CALBACK, AÇÃO
     $(function(){
-    // SELETOR, EVENTO, CALBACK, AÇÃO
+  
         $('.j_background_red').click(function(){
             // let text = $(this).text()
             // alert(text)
@@ -56,7 +57,13 @@
             let texto = $(this).val();
             $('.j_empresa').text(texto)
         })
-
+      
+        
     });
 
-    
+    // SELETOR, EFEITO, CALBACK, AÇÃO
+    $(function(){  
+         $('.j_effects_a').fadeOut(3000,function(){
+            alert('Fade')
+         })
+    })
