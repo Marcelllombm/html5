@@ -69,9 +69,25 @@
 
 
          $('.j_deletar').click(function(){
-            deletaPost($(this).attr("rel"));
+           // deletaPost($(this).attr("rel"));
+          // location.reload();
+            location.href = "https://www.google.com";
             return false;
          })
+
+        $(window).on('load', function(){
+
+            let tempo =  setInterval(function(){
+                $('.j_deletar').fadeToggle();
+                }, 200);
+
+                
+            $('.j_deletar').click(function(){
+                clearInterval(tempo)
+            })
+           
+        })
+    
 
          function deletaPost(postId){
             let alerta = confirm("tem certeza que quer deletar");
