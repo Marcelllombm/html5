@@ -115,6 +115,7 @@ display: none;
   background:#09f;
 }
 
+
 /*BIG TITLE */
 .big_title{
   display: block;
@@ -454,7 +455,7 @@ width: 48%;
   float:right;
   margin-top: 25px;
   margin-left:20px;
-  /* display:none; */
+  display:none;
 }
 
 .main_footer{

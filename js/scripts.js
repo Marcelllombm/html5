@@ -23,4 +23,37 @@ $(function(){
     $('.j_back').click(function(){
         $('html, body').animate({scrollTop: 0 }, 1000)
     })
+    // FORM SUBMIT
+
+        // SELETOR, EVENTO, CALLBACK, AÇÃO
+        $('.j_formsubmit').submit(function(event) {
+            event.preventDefault(); // Previne o envio padrão do formulário
+            
+            // Obtém os dados do formulário
+            const formData = $(this).serializeArray();
+            let formDetails = '';
+            
+            formData.forEach(function(item) {
+                formDetails += `${item.name}: ${item.value}\n`;
+            });
+            
+            // Exibe um alert com os dados do formulário
+            alert('Dados do Formulário:\n' + formDetails);
+            
+            // Realiza a requisição AJAX
+            $.ajax({
+                beforeSend: function() {
+                    $('.form_load').fadeIn();
+                },
+                success: function() {
+                    $('.form_load').fadeOut();
+                    // Adicione um alert de sucesso após o envio do AJAX
+                    alert('Formulário enviado com sucesso!');
+                }
+            });
+    
+            return false;
+        });
+    
+    
 })
