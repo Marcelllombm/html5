@@ -3,7 +3,7 @@
 <img src="img/layout.png">
 </br></br>
 
-## Este projeto foi desenvolvido com o objetivo de relembrar e entender o HTML5.
+## Este projeto foi feito com o objetivo de relembrar e entender o HTML5.
 
 ======================== ## ========================
 
